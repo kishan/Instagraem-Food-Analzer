@@ -22,7 +22,18 @@ Template['header'].events({
   'click #to_page_2' : function () {
     Router.go('/2');
   },
+  'click #enter' : function () {
+    Router.go('/enter');
+  },
   'click .resize.button' : function () {
+    var showLogin = Session.get('showLogin');
+    Session.set('isActive', !Session.get('isActive'));
+
+    setTimeout(function () {
+      Session.set('showLogin', !Session.get('showLogin'));
+    }, 600);
+  },
+  'click .login' : function () {
     var showLogin = Session.get('showLogin');
     Session.set('isActive', !Session.get('isActive'));
 

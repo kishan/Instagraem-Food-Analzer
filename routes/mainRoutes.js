@@ -13,3 +13,10 @@ Router.route('/2', {
     this.render('test_template');
   }
 });
+
+Router.route('/enter', {
+  name: 'enter',
+  action: function () {
+    this.render('enter');
+  }
+});
