@@ -1,4 +1,11 @@
 Template.home.helpers({
+  'sections' : function () {
+    return [
+      { 'text' : 'Easily gather data', 'icon' : 'bar chart', 'path' : '#packages', 'description':'Platform allows you to easily gather data from all your social media sites and display infromation in a very readable manner.' },
+      { 'text' : 'Simplified Analytics', 'icon' : 'search', 'path' : '#console-tool', 'description':'Easily understandable analysis of data allowing you to better explore any potential correlation between healthy eating habits and social media posts' },
+      { 'text' : 'Provides a structure', 'icon' : 'archive', 'path' : '#structure', 'description':'All data is stored securely on the cloud in a well-organized manner that allows for easy access and reference in the future.' }
+    ];
+  },
   'feature' : function () {
     return [
       { 'text' : 'Uses trusted packages', 'icon' : 'archive', 'path' : '#packages' },

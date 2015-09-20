@@ -1,17 +1,21 @@
 <template name="home">
     {{> header}}
-    <div class="ui four column main-content features grid">
-        {{#each feature}}
+
+    <div class="ui three column main-content features grid">
+        {{#each sections}}
             <div class="center aligned column">
                 <a href="{{path}}" class="ui unstyled no-hover-styles no-underline link icon header">
                     <span class="headline">{{text}}</span>
                     <i class="{{color}} {{icon}} boilerplate-feature icon"></i>
                 </a>
+                <p style="padding: 0px 100px;">
+                   {{description}}
+                </p>
             </div>
         {{/each}}
     </div>
 
-    <div id="packages" class="main-content padding-wrapper">
+    <!-- <div id="packages" class="main-content padding-wrapper">
         <div class="ui fitted horizontal icon divider"><i class="magic icon"></i></div>
         <div class="ui two column stackable grid">
             <div class="middle aligned row">
@@ -117,7 +121,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
     <div id="structure" class="main-content padding-wrapper">
         <div class="ui fitted horizontal icon divider"><i class="magic icon"></i></div>
@@ -155,4 +159,5 @@
             </div>
         </div>
     </div>
+    -->
 </template>
