@@ -20,3 +20,11 @@ Router.route('/enter', {
     this.render('enter');
   }
 });
+
+
+Router.route('/analysis', {
+  name: 'analysis',
+  action: function () {
+    this.render('analysis');
+  }
+});
