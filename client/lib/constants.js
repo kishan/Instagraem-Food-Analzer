@@ -5,7 +5,7 @@ if (Meteor.App) {
 }
 
 Meteor.App = {
-  NAME: 'Instagram Eating Analyzer',
+  NAME: 'Social Media Food Analyzer',
   DESCRIPTION: 'A boilerplate for meteorjs projects http://matteodem.github.io/meteor-boilerplate/',
   ADMIN_EMAIL: 'fake@gmail.com',
 };

@@ -1,20 +1,80 @@
 <template name="analysis">
 <style type="text/css">
 .background-image-analysis{
-    background-color:#2D2D2D;
+    background-color: #2A2A2A;
     height: 100%;
     width: 100%;
     background-position: 100% 100%;
 }
+.glassbox{
+    width:70%;
+    height: 120px;
+    /*background-color: rgba(255,255,255,0.1);*/
+    margin-left: 245px;
+    margin-bottom: 0px;
+    color:white;
+    /*padding: 25px 0px;*/
+}
+.glasstext{
+    color:white;
+    padding-top: 25px!important;
+    background-color: rgba(255,255,255,0.1);
+    height: 120px;
+    margin: 0px 5px 0px 0px;
+    padding-right: -5px;
+    width:287px !important;
+}
+.glasstext-top{
+    font-size: 30px;
+    padding-top: 0px;
+    font-weight: bold;
+}
+.glasstext-bottom{
+    padding-top: 10px;
+}
+
 </style>
 <body class="align background-image-analysis">
 
 <div class="center aligned">
-    <h1 style="padding-top:50px; padding-bottom:25px; color:#f6eff4; font-size:3em;" class="huge center aligned main ui header">
+    <h1 style="padding-top:40px; padding-bottom:15px; color:#f6eff4; font-size:3em;" class="huge center aligned main ui header">
         Analysis Page
     </h1>
 
-    {{> graph_bar}}
+    <div class="glassbox">
+
+        <div class="ui four column main-content features grid">
+            <div class="glasstext center aligned column">
+                <div class="glasstext-top">45</div>
+                <div class="glasstext-bottom">Posts About Food</div>
+            </div>
+            <div class="glasstext center aligned column">
+                <div class="glasstext-top">21</div>
+                <div class="glasstext-bottom">Posts Each Month</div>
+            </div>
+            <div class="glasstext center aligned column">
+                <div class="glasstext-top">21%  </div>
+                <div class="glasstext-bottom">Healthy Food Posts</div>
+            </div>
+            <div class="glasstext center aligned column">
+                <div class="glasstext-top">20</div>
+                <div class="glasstext-bottom">Posts About Food</div>
+            </div>
+        </div>
+
+
+    </div>
+    <h1 style="padding-top:10px; margin-bottom:-55px; color:#f6eff4; font-size:2em;" class="huge center aligned main ui header">
+        Healthy Post Percentage
+    </h1>
+    <div>{{> test}}</div>
+    <div>
+    <h1 style="padding-top:375px; margin-bottom:-55px; color:#f6eff4; font-size:2em;" class="huge center aligned main ui header">
+        Food Posts History
+    </h1>
+    </div>
+    <div style="margin-top: 70px;">{{> graph_bar}}</div>
+    
 </div>
 </body>
 </template>
